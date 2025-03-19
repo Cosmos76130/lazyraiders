@@ -35,7 +35,7 @@
                     return fetch(url)
                         .then(response => response.json())
                         .then(json => {
-                            const run = json.mythic_plus_weekly_highest_level_runs ? json.mythic_plus_weekly_highest_level_runs[0] : null;
+                            const run = json.mythic_plus_recent_runs ? json.mythic_plus_recent_runs[0] : null;
                             const gear = json.gear;
 
                             // Check if gear is defined
